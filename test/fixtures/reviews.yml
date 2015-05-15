@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyString
+  review_text: MyText
+  star_rating: 1
+  recommended: false
+  teaching_style: MyString
+  status: false
+  votes: 1
+  teacher_id: 1
+
+two:
+  subject: MyString
+  review_text: MyText
+  star_rating: 1
+  recommended: false
+  teaching_style: MyString
+  status: false
+  votes: 1
+  teacher_id: 1

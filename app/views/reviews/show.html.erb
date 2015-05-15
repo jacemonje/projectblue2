@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @review.subject %>
+</p>
+
+<p>
+  <strong>Review text:</strong>
+  <%= @review.review_text %>
+</p>
+
+<p>
+  <strong>Star rating:</strong>
+  <%= @review.star_rating %>
+</p>
+
+<p>
+  <strong>Recommended:</strong>
+  <%= @review.recommended %>
+</p>
+
+<p>
+  <strong>Teaching style:</strong>
+  <%= @review.teaching_style %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @review.status %>
+</p>
+
+<p>
+  <strong>Votes:</strong>
+  <%= @review.votes %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @review.teacher_id %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

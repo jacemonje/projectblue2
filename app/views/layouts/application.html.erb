@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectblue</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <center>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </center>
+
+
+<div align = "right">
+
+  <% if student_signed_in? %>
+
+
+      <%= link_to('Dashboard', :controller => "dashboard", :action => "index") %> :
+      <%= link_to('Logout', destroy_student_session_path, :method => :delete) %>
+
+
+  <% else %>
+
+      <%= link_to('Home', root_path) %> :
+      <%= link_to('Sign up', new_student_registration_path ) %> :
+      <%= link_to('Login?', new_student_session_path)  %>
+
+  <% end %>
+
+  </div>
+
+  <%= yield %>
+
+
+
+
+<footer>
+
+</footer>
+
+
+</body>
+</html>
