@@ -1,7 +1,3 @@
-# Author: Francis Bautista and Jace Monje
-# Organization: Project Blue
-#
-
 #===================================#
 #  Core Gems                        #
 #===================================#
